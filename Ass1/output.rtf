@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Alan Kelly\
+R00052131\
+Alan.kelly1@mycit.ie\
+\
+\'97POX SCRIPT COMMAND\'97\
+mininet@mininet:~$ pox/./pox.py ass1 openflow.of_01 --port=6653\
+\
+\
+\'97POX SCRIPT START OUTPUT\'97\
+POX 0.3.0 (dart) / Copyright 2011-2014 James McCauley, et al.\
+INFO:core:POX 0.3.0 (dart) is up.\
+INFO:openflow.of_01:[00-00-00-00-00-01 1] connected\
+Switch with DPID of 00-00-00-00-00-01 has come up.\
+Switch with DPID in HEX format of 0x1 has come up.\
+\
+\
+MININET TOPO SCRIPT COMMAND\
+mininet@mininet:~$ sudo python ./test.py \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 MININET TOPO SCRIPT COMMAND OUTPUT\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 added Switch s1\
+added Host 1\
+added Host 2\
+added Host 3\
+added Host 4\
+added Host 5\
+added Host 6\
+added Host 7\
+added Host 8\
+added Host 9\
+added Host 10\
+*** Creating network\
+*** Adding hosts:\
+h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 \
+*** Adding switches:\
+s1 \
+*** Adding links:\
+(h1, s1) (h2, s1) (h3, s1) (h4, s1) (h5, s1) (h6, s1) (h7, s1) (h8, s1) (h9, s1) (h10, s1) \
+*** Configuring hosts\
+h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 \
+*** Starting controller\
+poxctrl \
+*** Starting 1 switches\
+s1 ...\
+*** Starting CLI:\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 MININET TOPO CONNECTIVITY TEST COMMAND\
+mininet> pingall\
+\
+\
+MININET TOPO PINGALL  COMMAND OUTPUT\
+*** Ping: testing ping reachability\
+h1 -> h2 h3 h4 h5 h6 h7 h8 h9 h10 \
+h2 -> h1 h3 h4 h5 h6 h7 h8 h9 h10 \
+h3 -> h1 h2 h4 h5 h6 h7 h8 h9 h10 \
+h4 -> h1 h2 h3 h5 h6 h7 h8 h9 h10 \
+h5 -> h1 h2 h3 h4 h6 h7 h8 h9 h10 \
+h6 -> h1 h2 h3 h4 h5 h7 h8 h9 h10 \
+h7 -> h1 h2 h3 h4 h5 h6 h8 h9 h10 \
+h8 -> h1 h2 h3 h4 h5 h6 h7 h9 h10 \
+h9 -> h1 h2 h3 h4 h5 h6 h7 h8 h10 \
+h10 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 \
+*** Results: 0% dropped (90/90 received)\
+\
+}
